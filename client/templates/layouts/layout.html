@@ -1,8 +1,5 @@
 <template name="layout">
-
-    <!-- Splash screen -->
-    {{>splash }}
-
+  {{#if isReady}}
     <!-- Header -->
     {{> header }}
 
@@ -11,7 +8,11 @@
 
     <!-- Main Wrapper -->
     <div id="wrapper">
-        {{> yield}}
+        {{> Template.dynamic template=main}}
     </div>
 
+  {{ else }}
+    <!-- Splash screen -->
+    {{> splash }}
+  {{/if}}
 </template>
