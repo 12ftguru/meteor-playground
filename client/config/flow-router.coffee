@@ -11,6 +11,13 @@ FlowRouter.route '/',
 
 
 
+## 404 Not Found
+FlowRouter.notFound =
+  subscriptions: ->
+  action: ->
+    FlowLayout.render 'blankLayout',
+      main: 'notFound'
+
 ## Template helper
 Template.registerHelper 'isReady', (sub) ->
   if sub?
