@@ -1,9 +1,9 @@
 FlowRouter.route '/',
   middlewares: []
-  #subscriptions: (params, queryParams) ->
+  subscriptions: (params, queryParams) ->
   action: (params, queryParams) ->
-    console.log 'Params:', params
-    console.log 'Query Params:', queryParams
+ #   console.log 'Params:', params
+ #   console.log 'Query Params:', queryParams
     FlowLayout.render 'layout',
       main: 'dashboard'
     return
