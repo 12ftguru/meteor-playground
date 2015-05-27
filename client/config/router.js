@@ -1,4 +1,4 @@
-Router.configure({
+/* Router.configure({
     layoutTemplate: 'layout',
     notFoundTemplate: 'notFound'
 });
@@ -230,4 +230,4 @@ Router.onAfterAction(function()
     {
         $('.splash').css('display', 'none')
     })
-});
+}); */
