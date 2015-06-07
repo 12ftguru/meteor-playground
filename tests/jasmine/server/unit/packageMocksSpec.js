@@ -7086,7 +7086,7 @@ var packageMetadata = {
                 },
                 "version": {
                   "type": "constant",
-                  "value": "b2517182a80eaa2891b8b42a86928d58ff7c58a2"
+                  "value": "5696984d9c5cade7e281309efaceb956471770c0"
                 },
                 "PUBLIC_SETTINGS": {
                   "type": "undefined"
@@ -7366,7 +7366,7 @@ var packageMetadata = {
       }
     }
   },
-  "autopublish": {},
+  "audit-argument-checks": {},
   "callback-hook": {
     "Hook": {
       "type": "function",
@@ -7706,7 +7706,6 @@ var packageMetadata = {
       }
     }
   },
-  "insecure": {},
   "mongo": {
     "MongoTest": {
       "type": "object",
@@ -7855,11 +7854,11 @@ var packageMetadata = {
       "members": {
         "autoupdateVersion": {
           "type": "constant",
-          "value": "5f04dc811b09c64a4c2e233577568c574d0c7e85"
+          "value": "c3fa03ca1620e5e802d2ba54239a02e04bbdd148"
         },
         "autoupdateVersionRefreshable": {
           "type": "constant",
-          "value": "ceffe70bdda8a6a221070d3b10dd1938de8ee6bc"
+          "value": "b104148df4c088d0f0baa2b6896573326f8bfadc"
         },
         "autoupdateVersionCordova": {
           "type": "constant",
@@ -7867,7 +7866,7 @@ var packageMetadata = {
         },
         "appId": {
           "type": "constant",
-          "value": "ys77puafxdgctseirf"
+          "value": "429aye2tzjg215e1c8u"
         }
       }
     }
@@ -8726,11 +8725,11 @@ var packageMetadata = {
                 },
                 "pid": {
                   "type": "constant",
-                  "value": 75827
+                  "value": 77601
                 },
                 "fout": {
                   "type": "constant",
-                  "value": 33
+                  "value": 36
                 },
                 "child": {
                   "type": "object",
@@ -8749,7 +8748,7 @@ var packageMetadata = {
                     },
                     "pid": {
                       "type": "constant",
-                      "value": 75827
+                      "value": 77601
                     },
                     "stdin": {
                       "type": "null",
@@ -8871,6 +8870,169 @@ var packageMetadata = {
     }
   },
   "velocity:html-reporter": {},
+  "less": {},
+  "twbs:bootstrap": {},
+  "fortawesome:fontawesome": {},
+  "natestrauser:animate-css": {},
+  "kevohagan:sweetalert": {},
+  "chrismbeckett:toastr": {},
+  "reactive-dict": {
+    "ReactiveDict": {
+      "type": "function",
+      "members": {
+        "prototype": {
+          "type": "object",
+          "members": {
+            "set": {
+              "type": "function"
+            },
+            "setDefault": {
+              "type": "function"
+            },
+            "get": {
+              "type": "function"
+            },
+            "equals": {
+              "type": "function"
+            }
+          }
+        }
+      }
+    }
+  },
+  "meteorhacks:flow-layout": {
+    "FlowLayout": {
+      "type": "undefined"
+    }
+  },
+  "meteorhacks:flow-router": {
+    "FlowRouter": {
+      "type": "object",
+      "members": {
+        "subscriptions": {
+          "type": "function",
+          "members": {
+            "future": {
+              "type": "function"
+            }
+          }
+        },
+        "Router": {
+          "type": "function",
+          "members": {
+            "prototype": {
+              "type": "object",
+              "members": {
+                "route": {
+                  "type": "function",
+                  "refID": 6
+                },
+                "group": {
+                  "type": "function",
+                  "refID": 8
+                },
+                "go": {
+                  "type": "function",
+                  "refID": 10
+                },
+                "current": {
+                  "type": "function",
+                  "refID": 12
+                },
+                "middleware": {
+                  "type": "function",
+                  "refID": 14
+                },
+                "getState": {
+                  "type": "function",
+                  "refID": 16
+                },
+                "getAllStates": {
+                  "type": "function",
+                  "refID": 18
+                },
+                "setState": {
+                  "type": "function",
+                  "refID": 20
+                },
+                "removeState": {
+                  "type": "function",
+                  "refID": 22
+                },
+                "clearStates": {
+                  "type": "function",
+                  "refID": 24
+                },
+                "ready": {
+                  "type": "function",
+                  "refID": 26
+                },
+                "initialize": {
+                  "type": "function",
+                  "refID": 28
+                }
+              }
+            }
+          }
+        },
+        "Route": {
+          "type": "function",
+          "members": {
+            "prototype": {
+              "type": "object",
+              "members": {
+                "register": {
+                  "type": "function"
+                },
+                "subscription": {
+                  "type": "function"
+                },
+                "middleware": {
+                  "type": "function"
+                }
+              }
+            }
+          }
+        },
+        "route": {
+          "ref": 6
+        },
+        "group": {
+          "ref": 8
+        },
+        "go": {
+          "ref": 10
+        },
+        "current": {
+          "ref": 12
+        },
+        "middleware": {
+          "ref": 14
+        },
+        "getState": {
+          "ref": 16
+        },
+        "getAllStates": {
+          "ref": 18
+        },
+        "setState": {
+          "ref": 20
+        },
+        "removeState": {
+          "ref": 22
+        },
+        "clearStates": {
+          "ref": 24
+        },
+        "ready": {
+          "ref": 26
+        },
+        "initialize": {
+          "ref": 28
+        }
+      }
+    }
+  },
   "session": {},
   "livedata": {
     "DDP": {
