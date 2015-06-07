@@ -2,7 +2,13 @@
 # Project Specific Ignores #
 ############################
 
-#Add any ignores specific to this project here.
+#Add any ignores specific to this project here.  Make a
+#settings.json-dist file to publish settings to the repository. Be
+#sure to clean it of any private info like API Keys.
+
+settings.json
+dev-settings.json
+
 
 ##############
 # Sencha Cmd #
