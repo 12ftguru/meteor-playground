@@ -18,3 +18,4 @@ coffeescript
 meteorhacks:flow-layout
 meteorhacks:flow-router
 audit-argument-checks
+playground:useraccounts
