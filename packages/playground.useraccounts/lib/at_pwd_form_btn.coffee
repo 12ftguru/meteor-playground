@@ -1,0 +1,1 @@
+Template.atPwdFormBtn.helpers AccountsTemplates.atPwdFormBtnHelpers

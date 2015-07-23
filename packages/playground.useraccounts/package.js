@@ -2,7 +2,7 @@ Package.describe({
   summary: 'Accounts Templates for Playground.',
   version: '1.0.0',
   name: 'playground:useraccounts',
-  git: 'https://github.com/12ftguru/meteor-playground.git',
+  git: 'https://github.com/12ftguru/meteor-playground.git'
 });
 
 Package.on_use(function(api, where) {
@@ -22,44 +22,44 @@ Package.on_use(function(api, where) {
   ], ['client', 'server']);
 
   api.add_files([
-    /* 'lib/at_error.html',
-    'lib/at_error.js',
+    'lib/at_error.html',
+    'lib/at_error.coffee',
     'lib/at_form.html',
-    'lib/at_form.js',
+    'lib/at_form.coffee',
     'lib/at_input.html',
-    'lib/at_input.js',
+    'lib/at_input.coffee',
     'lib/at_message.html',
-    'lib/at_message.js',
+    'lib/at_message.coffee',
     'lib/at_nav_button.html',
-    'lib/at_nav_button.js',
+    'lib/at_nav_button.coffee',
     'lib/at_oauth.html',
-    'lib/at_oauth.js',
+    'lib/at_oauth.coffee',
     'lib/at_pwd_form.html',
-    'lib/at_pwd_form.js',
+    'lib/at_pwd_form.coffee',
     'lib/at_pwd_form_btn.html',
-    'lib/at_pwd_form_btn.js',
+    'lib/at_pwd_form_btn.coffee',
     'lib/at_pwd_link.html',
-    'lib/at_pwd_link.js',
+    'lib/at_pwd_link.coffee',
     'lib/at_reCaptcha.html',
-    'lib/at_reCaptcha.js',
+    'lib/at_reCaptcha.coffee',
     'lib/at_resend_verification_email_link.html',
-    'lib/at_resend_verification_email_link.js',
+    'lib/at_resend_verification_email_link.coffee',
     'lib/at_result.html',
-    'lib/at_result.js',
+    'lib/at_result.coffee',
     'lib/at_sep.html',
-    'lib/at_sep.js',
+    'lib/at_sep.coffee',
     'lib/at_signin_link.html',
-    'lib/at_signin_link.js',
+    'lib/at_signin_link.coffee',
     'lib/at_signup_link.html',
-    'lib/at_signup_link.js',
+    'lib/at_signup_link.coffee',
     'lib/at_social.html',
-    'lib/at_social.js',
+    'lib/at_social.coffee',
     'lib/at_terms_link.html',
-    'lib/at_terms_link.js',
+    'lib/at_terms_link.coffee',
     'lib/at_title.html',
-    'lib/at_title.js',
+    'lib/at_title.coffee',
     'lib/full_page_at_form.html',
-    'lib/at_unstyled.css' */
+    'lib/at_unstyled.css'
   ], ['client']);
 });
 

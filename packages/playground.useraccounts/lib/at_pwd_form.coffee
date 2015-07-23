@@ -1,0 +1,2 @@
+Template.atPwdForm.helpers AccountsTemplates.atPwdFormHelpers
+Template.atPwdForm.events AccountsTemplates.atPwdFormEvents

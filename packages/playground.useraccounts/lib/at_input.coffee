@@ -1,0 +1,9 @@
+Template.atInput.rendered = AccountsTemplates.atInputRendered
+# Simply 'inherits' helpers from AccountsTemplates
+Template.atInput.helpers AccountsTemplates.atInputHelpers
+Template.atInput.events AccountsTemplates.atInputEvents
+Template.atTextInput.helpers AccountsTemplates.atInputHelpers
+Template.atCheckboxInput.helpers AccountsTemplates.atInputHelpers
+Template.atSelectInput.helpers AccountsTemplates.atInputHelpers
+Template.atRadioInput.helpers AccountsTemplates.atInputHelpers
+Template.atHiddenInput.helpers AccountsTemplates.atInputHelpers

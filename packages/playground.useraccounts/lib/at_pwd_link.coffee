@@ -1,0 +1,2 @@
+Template.atPwdLink.helpers AccountsTemplates.atPwdLinkHelpers
+Template.atPwdLink.events AccountsTemplates.atPwdLinkEvents

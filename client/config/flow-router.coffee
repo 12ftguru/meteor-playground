@@ -1,15 +1,31 @@
 FlowRouter.route '/',
+  name: "dashboard"
   middlewares: []
   subscriptions: (params, queryParams) ->
   action: (params, queryParams) ->
- #   console.log 'Params:', params
- #   console.log 'Query Params:', queryParams
-    FlowLayout.render 'layout',
-      main: 'dashboard'
-    return
+    Tracker.autorun () ->
+      unless Meteor.userId()
+        FlowLayout.render 'landingPage'
+      else
+        FlowLayout.render 'layout',
+          main: 'dashboard'
+    
   name: 'home'
 
+AccountsTemplates.configureRoute 'signIn',
+  name: 'signIn'
+  path: '/login'
+  #template: 'loginPanel'
+  layoutTemplate: 'blankLayout'
+  layoutRegions:
+    main: "fullPageAtForm"
+  redirect: '/'
 
+FlowRouter.route '/logout',
+  name: "signOut"
+  action: () ->
+    Meteor.logout () ->
+      FlowRouter.go '/'
 
 ## 404 Not Found
 FlowRouter.notFound =

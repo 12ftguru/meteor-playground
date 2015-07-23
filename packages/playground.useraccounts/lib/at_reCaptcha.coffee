@@ -1,0 +1,2 @@
+Template.atReCaptcha.rendered = AccountsTemplates.atReCaptchaRendered
+Template.atReCaptcha.helpers AccountsTemplates.atReCaptchaHelpers
