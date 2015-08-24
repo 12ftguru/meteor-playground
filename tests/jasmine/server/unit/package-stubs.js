@@ -7085,7 +7085,7 @@ var packageMetadata = {
                 },
                 "version": {
                   "type": "constant",
-                  "value": "3233542905a5d8b64818d7d643e3593cf070ac98"
+                  "value": "3402c9bf642efa52b1af608c3cf0411eb346b5f2"
                 },
                 "PUBLIC_SETTINGS": {
                   "type": "undefined"
@@ -7209,7 +7209,7 @@ var packageMetadata = {
             },
             "connections": {
               "type": "constant",
-              "value": 0
+              "value": 1
             },
             "timeout": {
               "type": "constant",
@@ -7863,11 +7863,11 @@ var packageMetadata = {
       "members": {
         "autoupdateVersion": {
           "type": "constant",
-          "value": "464b7cfc0b2cbf2dd75ac798c13eb625b169316d"
+          "value": "fe1911a02fa560fc269540bcbe616f2d6ee9693c"
         },
         "autoupdateVersionRefreshable": {
           "type": "constant",
-          "value": "2d639e6984735fd00eb1d4f26bd360fb1ae25242"
+          "value": "78ce61e6f4b9e07566ae90c4e285f13048976d67"
         },
         "autoupdateVersionCordova": {
           "type": "constant",
@@ -8734,84 +8734,7 @@ var packageMetadata = {
                 },
                 "pid": {
                   "type": "constant",
-                  "value": 89150
-                },
-                "fout": {
-                  "type": "constant",
-                  "value": 40
-                },
-                "child": {
-                  "type": "object",
-                  "members": {
-                    "domain": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "signalCode": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "exitCode": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "pid": {
-                      "type": "constant",
-                      "value": 89150
-                    },
-                    "stdin": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "stdout": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "stderr": {
-                      "type": "null",
-                      "value": null
-                    },
-                    "stdio": {
-                      "type": "array"
-                    },
-                    "spawn": {
-                      "type": "function"
-                    },
-                    "kill": {
-                      "type": "function"
-                    },
-                    "ref": {
-                      "type": "function"
-                    },
-                    "unref": {
-                      "type": "function"
-                    },
-                    "setMaxListeners": {
-                      "type": "function"
-                    },
-                    "emit": {
-                      "type": "function"
-                    },
-                    "addListener": {
-                      "type": "function",
-                      "refID": 17
-                    },
-                    "on": {
-                      "ref": 17
-                    },
-                    "once": {
-                      "type": "function"
-                    },
-                    "removeListener": {
-                      "type": "function"
-                    },
-                    "removeAllListeners": {
-                      "type": "function"
-                    },
-                    "listeners": {
-                      "type": "function"
-                    }
-                  }
+                  "value": 40087
                 },
                 "getTaskName": {
                   "type": "function"
@@ -8884,185 +8807,6 @@ var packageMetadata = {
   "natestrauser:animate-css": {},
   "kevohagan:sweetalert": {},
   "chrismbeckett:toastr": {},
-  "reactive-dict": {
-    "ReactiveDict": {
-      "type": "function",
-      "members": {
-        "prototype": {
-          "type": "object",
-          "members": {
-            "set": {
-              "type": "function"
-            },
-            "setDefault": {
-              "type": "function"
-            },
-            "get": {
-              "type": "function"
-            },
-            "equals": {
-              "type": "function"
-            }
-          }
-        }
-      }
-    }
-  },
-  "meteorhacks:flow-layout": {
-    "FlowLayout": {
-      "type": "undefined"
-    }
-  },
-  "meteorhacks:flow-router": {
-    "FlowRouter": {
-      "type": "object",
-      "members": {
-        "subscriptions": {
-          "type": "function",
-          "members": {
-            "future": {
-              "type": "function"
-            }
-          }
-        },
-        "Router": {
-          "type": "function",
-          "members": {
-            "prototype": {
-              "type": "object",
-              "members": {
-                "route": {
-                  "type": "function",
-                  "refID": 6
-                },
-                "group": {
-                  "type": "function",
-                  "refID": 8
-                },
-                "path": {
-                  "type": "function",
-                  "refID": 10
-                },
-                "go": {
-                  "type": "function",
-                  "refID": 12
-                },
-                "current": {
-                  "type": "function",
-                  "refID": 14
-                },
-                "triggers": {
-                  "type": "object",
-                  "refID": 16,
-                  "members": {
-                    "enter": {
-                      "type": "function"
-                    },
-                    "exit": {
-                      "type": "function"
-                    }
-                  }
-                },
-                "middleware": {
-                  "type": "function",
-                  "refID": 21
-                },
-                "getState": {
-                  "type": "function",
-                  "refID": 23
-                },
-                "getAllStates": {
-                  "type": "function",
-                  "refID": 25
-                },
-                "setState": {
-                  "type": "function",
-                  "refID": 27
-                },
-                "removeState": {
-                  "type": "function",
-                  "refID": 29
-                },
-                "clearStates": {
-                  "type": "function",
-                  "refID": 31
-                },
-                "ready": {
-                  "type": "function",
-                  "refID": 33
-                },
-                "initialize": {
-                  "type": "function",
-                  "refID": 35
-                }
-              }
-            }
-          }
-        },
-        "Route": {
-          "type": "function",
-          "members": {
-            "prototype": {
-              "type": "object",
-              "members": {
-                "register": {
-                  "type": "function"
-                },
-                "subscription": {
-                  "type": "function"
-                },
-                "middleware": {
-                  "type": "function"
-                }
-              }
-            }
-          }
-        },
-        "route": {
-          "ref": 6
-        },
-        "group": {
-          "ref": 8
-        },
-        "path": {
-          "ref": 10
-        },
-        "go": {
-          "ref": 12
-        },
-        "current": {
-          "ref": 14
-        },
-        "triggers": {
-          "ref": 16
-        },
-        "middleware": {
-          "ref": 21
-        },
-        "getState": {
-          "ref": 23
-        },
-        "getAllStates": {
-          "ref": 25
-        },
-        "setState": {
-          "ref": 27
-        },
-        "removeState": {
-          "ref": 29
-        },
-        "clearStates": {
-          "ref": 31
-        },
-        "ready": {
-          "ref": 33
-        },
-        "initialize": {
-          "ref": 35
-        }
-      }
-    }
-  },
   "accounts-base": {
     "Accounts": {
       "type": "object",
@@ -9354,6 +9098,192 @@ var packageMetadata = {
       }
     },
     "AccountsTest": {
+      "type": "undefined"
+    }
+  },
+  "reactive-dict": {
+    "ReactiveDict": {
+      "type": "function",
+      "members": {
+        "prototype": {
+          "type": "object",
+          "members": {
+            "set": {
+              "type": "function"
+            },
+            "setDefault": {
+              "type": "function"
+            },
+            "get": {
+              "type": "function"
+            },
+            "equals": {
+              "type": "function"
+            }
+          }
+        }
+      }
+    }
+  },
+  "kadira:flow-router": {
+    "FlowRouter": {
+      "type": "object",
+      "members": {
+        "subscriptions": {
+          "type": "function",
+          "members": {
+            "future": {
+              "type": "function"
+            }
+          }
+        },
+        "Router": {
+          "type": "function",
+          "members": {
+            "prototype": {
+              "type": "object",
+              "members": {
+                "route": {
+                  "type": "function",
+                  "refID": 6
+                },
+                "group": {
+                  "type": "function",
+                  "refID": 8
+                },
+                "path": {
+                  "type": "function",
+                  "refID": 10
+                },
+                "go": {
+                  "type": "function",
+                  "refID": 12
+                },
+                "current": {
+                  "type": "function",
+                  "refID": 14
+                },
+                "triggers": {
+                  "type": "object",
+                  "refID": 16,
+                  "members": {
+                    "enter": {
+                      "type": "function"
+                    },
+                    "exit": {
+                      "type": "function"
+                    }
+                  }
+                },
+                "middleware": {
+                  "type": "function",
+                  "refID": 21
+                },
+                "getState": {
+                  "type": "function",
+                  "refID": 23
+                },
+                "getAllStates": {
+                  "type": "function",
+                  "refID": 25
+                },
+                "setState": {
+                  "type": "function",
+                  "refID": 27
+                },
+                "removeState": {
+                  "type": "function",
+                  "refID": 29
+                },
+                "clearStates": {
+                  "type": "function",
+                  "refID": 31
+                },
+                "ready": {
+                  "type": "function",
+                  "refID": 33
+                },
+                "initialize": {
+                  "type": "function",
+                  "refID": 35
+                },
+                "wait": {
+                  "type": "function",
+                  "refID": 37
+                }
+              }
+            }
+          }
+        },
+        "Route": {
+          "type": "function",
+          "members": {
+            "prototype": {
+              "type": "object",
+              "members": {
+                "register": {
+                  "type": "function"
+                },
+                "subscription": {
+                  "type": "function"
+                },
+                "middleware": {
+                  "type": "function"
+                }
+              }
+            }
+          }
+        },
+        "route": {
+          "ref": 6
+        },
+        "group": {
+          "ref": 8
+        },
+        "path": {
+          "ref": 10
+        },
+        "go": {
+          "ref": 12
+        },
+        "current": {
+          "ref": 14
+        },
+        "triggers": {
+          "ref": 16
+        },
+        "middleware": {
+          "ref": 21
+        },
+        "getState": {
+          "ref": 23
+        },
+        "getAllStates": {
+          "ref": 25
+        },
+        "setState": {
+          "ref": 27
+        },
+        "removeState": {
+          "ref": 29
+        },
+        "clearStates": {
+          "ref": 31
+        },
+        "ready": {
+          "ref": 33
+        },
+        "initialize": {
+          "ref": 35
+        },
+        "wait": {
+          "ref": 37
+        }
+      }
+    }
+  },
+  "kadira:blaze-layout": {
+    "BlazeLayout": {
       "type": "undefined"
     }
   },
@@ -19519,6 +19449,156 @@ var packageMetadata = {
   "accounts-password": {},
   "constellation:velocity": {},
   "playground:debuggery": {},
+  "meteorhacks:flow-router": {
+    "FlowRouter": {
+      "type": "object",
+      "members": {
+        "subscriptions": {
+          "type": "function",
+          "members": {
+            "future": {
+              "type": "function"
+            }
+          }
+        },
+        "Router": {
+          "type": "function",
+          "members": {
+            "prototype": {
+              "type": "object",
+              "members": {
+                "route": {
+                  "type": "function",
+                  "refID": 6
+                },
+                "group": {
+                  "type": "function",
+                  "refID": 8
+                },
+                "path": {
+                  "type": "function",
+                  "refID": 10
+                },
+                "go": {
+                  "type": "function",
+                  "refID": 12
+                },
+                "current": {
+                  "type": "function",
+                  "refID": 14
+                },
+                "triggers": {
+                  "type": "object",
+                  "refID": 16,
+                  "members": {
+                    "enter": {
+                      "type": "function"
+                    },
+                    "exit": {
+                      "type": "function"
+                    }
+                  }
+                },
+                "middleware": {
+                  "type": "function",
+                  "refID": 21
+                },
+                "getState": {
+                  "type": "function",
+                  "refID": 23
+                },
+                "getAllStates": {
+                  "type": "function",
+                  "refID": 25
+                },
+                "setState": {
+                  "type": "function",
+                  "refID": 27
+                },
+                "removeState": {
+                  "type": "function",
+                  "refID": 29
+                },
+                "clearStates": {
+                  "type": "function",
+                  "refID": 31
+                },
+                "ready": {
+                  "type": "function",
+                  "refID": 33
+                },
+                "initialize": {
+                  "type": "function",
+                  "refID": 35
+                }
+              }
+            }
+          }
+        },
+        "Route": {
+          "type": "function",
+          "members": {
+            "prototype": {
+              "type": "object",
+              "members": {
+                "register": {
+                  "type": "function"
+                },
+                "subscription": {
+                  "type": "function"
+                },
+                "middleware": {
+                  "type": "function"
+                }
+              }
+            }
+          }
+        },
+        "route": {
+          "ref": 6
+        },
+        "group": {
+          "ref": 8
+        },
+        "path": {
+          "ref": 10
+        },
+        "go": {
+          "ref": 12
+        },
+        "current": {
+          "ref": 14
+        },
+        "triggers": {
+          "ref": 16
+        },
+        "middleware": {
+          "ref": 21
+        },
+        "getState": {
+          "ref": 23
+        },
+        "getAllStates": {
+          "ref": 25
+        },
+        "setState": {
+          "ref": 27
+        },
+        "removeState": {
+          "ref": 29
+        },
+        "clearStates": {
+          "ref": 31
+        },
+        "ready": {
+          "ref": 33
+        },
+        "initialize": {
+          "ref": 35
+        }
+      }
+    }
+  },
   "zimme:active-route": {
     "ActiveRoute": {
       "type": "object",

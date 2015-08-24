@@ -81,3 +81,34 @@
   border-left: 6px solid @color-blue;
 }
 
+.alert-variant(@background; @border; @text-color) {
+  background-color: @background;
+  border-color: @border;
+  color: @text-color;
+  padding-left: 5em;
+  position: relative;
+  hr {
+    border-top-color: darken(@border, 5%);
+  }
+  .alert-link {
+    color: darken(@text-color, 10%);
+  }
+  i {
+    position: absolute;
+    height: 100%;
+    left: 0.5em;
+    top: 50%;
+    margin-top: -.5em;
+    font-weight: bold;
+  }
+}
+
+
+.alert-warning2 {
+  .alert-variant(@color-orange-light; @color-orange; @color-orange);
+}
+
+
+.alert-error {
+  .alert-variant(@color-red-light; @color-red-deep; @color-red-deep);
+}

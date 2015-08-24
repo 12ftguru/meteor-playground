@@ -1,0 +1,19 @@
+<template name="addThing">
+  <div>
+    {{> pageHeader title="Add a Thing" category="Things"}}
+    {{#staggering}}
+      <div class="content">
+
+        <div>
+          <div class="row">
+            <div class="col-lg-12">
+              {{#baseForm schema=schema action=action title="General Thing Settings" submit="Add a thing!"}}
+                {{> baseTextInput field="name"}}
+              {{/baseForm}}
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/staggering}}
+  </div>
+</template>

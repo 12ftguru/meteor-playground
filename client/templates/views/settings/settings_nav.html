@@ -1,0 +1,19 @@
+<template name="settings_nav">
+    <aside id="menu">
+        <div id="navigation">
+            <div class="profile-picture">
+              <a href="{{pathFor 'settingsHome'}}">
+                <i class="pe-7s-config fa-5x"></i>
+              </a>
+
+                <div class="stats-label text-color">
+                    <span class="font-extra-bold font-uppercase">Settings</span>
+                </div>
+            </div>
+	    <ul class="nav" id="side-menu">
+	      <li class="{{isActiveRoute regex='settingsHome'}}"><a href="{{pathFor 'settingsHome'}}">General</a></li>
+	      <li class="{{isActiveRoute regex='settingsProfile'}}"><a href="{{pathFor 'settingsProfile'}}">Profile</a></li>
+	    </ul>
+	</div>
+    </aside>
+</template>

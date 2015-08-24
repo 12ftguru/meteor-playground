@@ -1,13 +1,12 @@
 FlowRouter.route '/',
   name: "dashboard"
-  middlewares: []
   subscriptions: (params, queryParams) ->
   action: (params, queryParams) ->
     Tracker.autorun () ->
       unless Meteor.userId()
-        FlowLayout.render 'landingPage'
+        BlazeLayout.render 'landingPage'
       else
-        FlowLayout.render 'layout',
+        BlazeLayout.render 'layout',
           main: 'dashboard'
     
   name: 'home'
@@ -31,7 +30,7 @@ FlowRouter.route '/logout',
 FlowRouter.notFound =
   subscriptions: ->
   action: ->
-    FlowLayout.render 'blankLayout',
+    BlazeLayout.render 'blankLayout',
       main: 'notFound'
 
 ## Template helper

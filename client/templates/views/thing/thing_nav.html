@@ -1,0 +1,19 @@
+<template name="thing_nav">
+    <aside id="menu">
+        <div id="navigation">
+            <div class="profile-picture">
+                <a href="{{pathFor 'myThings'}}">
+                    <i class="pe-7s-science fa-5x"></i>
+                </a>
+
+                <div class="stats-label text-color">
+                  <span class="font-extra-bold font-uppercase">My Things</span>
+                </div>
+            </div>
+
+            <ul class="nav" id="side-menu">
+                {{>navigation_thinglist}}
+            </ul>
+        </div>
+    </aside>
+</template>

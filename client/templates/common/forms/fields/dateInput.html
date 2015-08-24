@@ -1,0 +1,19 @@
+<template name="dateInput">
+
+    <div class="form-group">
+
+    {{#unless noLabel}}
+      <label class="col-sm-2 control-label" for="{{field}}">{{label}}</label>
+    {{/unless}}
+
+    <div class="col-sm-{{#if noLabel}}12{{else}}10{{/if}}">
+      <div class="input-group date">
+        <input type="text" class="form-control reactive-element" name="{{field}}" value="{{value}}" placeholder="{{#if placeholder}}{{placeholder}}{{else}}{{instructions}}{{/if}}" /><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+      </div>
+      {{#if errorMessage}}
+        <span class="error help-block m-b-none text-warning2 text-right">{{errorMessage}}</span>
+      {{/if}}
+
+    </div>
+    </div>
+</template>

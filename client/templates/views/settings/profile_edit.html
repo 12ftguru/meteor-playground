@@ -1,0 +1,36 @@
+<template name="settings_edit_profile">
+  {{>pageHeader title="Edit Profile" altTitle="Edit" category="Settings|Profile"}}
+  {{#staggering}}
+    <div class="content">
+      <div>
+        <div class="row">
+          <div class="col-lg-12">
+            {{#baseForm schema=schema action=action title="" data=profileData submit="Save Profile"}}
+              <fieldset><legend>Name</legend>
+              <div class="form-group">
+                <div class="row no-gutter">
+                  <div class="col-md-4">
+                    {{> baseTextInput field="firstName" placeholder="First Name" noLabel=true}}
+                  </div>
+                  <div class="col-md-4">
+                    {{> baseTextInput field="secondName" placeholder="Middle Name" noLabel=true}}
+                  </div>
+                  <div class="col-md-4">
+                    {{> baseTextInput field="lastName" placeholder="Last Name" noLabel=true}}
+                  </div>
+                </div>
+              </div>
+              </fieldset>
+              <fieldset><legend>Biographical Info</legend>
+                {{> baseTextInput field="website" type="url" placeholder="Web Site" noLabel=true}}
+                {{> dateInput field="birthday" placeholder="Date of Birth" noLabel=true}}
+                {{> selectField field="gender" placeholder="Gender" otherPlaceholder="Please Specify..." noLabel=true}}
+		{{> htmlAreaField field="bio" placeholder="<p>Enter a short bio here.</p>"}}
+              </fieldset>
+            {{/baseForm}}
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/staggering}}
+</template>

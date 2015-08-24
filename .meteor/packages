@@ -5,17 +5,13 @@
 # but you can also edit it by hand.
 
 meteor-platform
-sanjo:jasmine
 less
 jquery
 twbs:bootstrap
 fortawesome:fontawesome
 natestrauser:animate-css
 kevohagan:sweetalert
-chrismbeckett:toastr
 coffeescript
-meteorhacks:flow-layout
-meteorhacks:flow-router
 audit-argument-checks
 playground:useraccounts
 constellation:console
@@ -27,4 +23,22 @@ constellation:tiny
 accounts-password
 constellation:velocity
 playground:debuggery
-arillo:flow-router-helpers
+aldeed:simple-schema
+aldeed:collection2
+meteorhacks:subs-manager
+east5th:check-checker
+kadira:blaze-layout
+kadira:flow-router
+momentjs:moment
+chrismbeckett:toastr
+reactive-var
+alanning:roles
+underscore
+templates:forms
+utilities:avatar
+useraccounts:flow-routing
+mike:mocha
+practicalmeteor:sinon
+yasinuslu:blaze-meta
+sacha:spin
+12ftguru:subr

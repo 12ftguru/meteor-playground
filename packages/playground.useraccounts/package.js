@@ -17,10 +17,6 @@ Package.on_use(function(api, where) {
     'useraccounts:core'
   ], ['client', 'server']);
 
-  api.imply([
-    'useraccounts:core@1.10.0'
-  ], ['client', 'server']);
-
   api.add_files([
     'lib/at_error.html',
     'lib/at_error.coffee',

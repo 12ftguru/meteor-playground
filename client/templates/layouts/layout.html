@@ -1,18 +1,12 @@
 <template name="layout">
-  {{#if isReady}}
     <!-- Header -->
     {{> header }}
 
     <!-- Navigation -->
-    {{> navigation }}
+    {{> Template.dynamic template=nav }}
 
     <!-- Main Wrapper -->
     <div id="wrapper">
         {{> Template.dynamic template=main}}
     </div>
-
-  {{ else }}
-    <!-- Splash screen -->
-    {{> splash }}
-  {{/if}}
 </template>

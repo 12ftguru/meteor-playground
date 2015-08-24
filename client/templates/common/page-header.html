@@ -1,29 +1,40 @@
 <template name="pageHeader">
 
-    <div class="normalheader transition {{#if small}} small-header {{/if}}">
+    <div class="normalheader transition {{#unless big}} small-header {{/unless}}">
         <div class="hpanel">
             <div class="panel-body">
-                <a class="small-header-action">
-                    <div class="clip-header">
-                        <i class="fa fa-arrow-up"></i>
-                    </div>
-                </a>
 
-                <div id="hbreadcrumb" class="pull-right m-t-lg">
-                    <ol class="hbreadcrumb breadcrumb">
-                        <li><a href="{{pathFor route='dashboard'}}">Home</a></li>
+                <div id="hbreadcrumb" class="pull-right {{#if big}}m-t-lg{{/if}}">
+                  <ol class="hbreadcrumb breadcrumb">
+                      <li><a href="{{pathFor 'home'}}">Home</a></li>
+                      {{#if notHome}}
+                        {{#each categories}}
                         <li>
-                            <span>{{category}}</span>
+                            <span>{{this}}</span>
                         </li>
-                        <li class="active">
-                            <span>{{title}}</span>
+                        {{/each}}
+                      {{/if}}
+                      <li class="active">
+                        {{#if altTitle}}
+                          <span>{{altTitle}}</span>
+                          {{else}}
+                          <span>{{title}}</span>
+                        {{/if}}
+
                         </li>
                     </ol>
                 </div>
-                <h2 class="font-light m-b-xs">
+                {{#if desc}}
+                  <h2 class="font-light m-b-xs">
                     {{title}}
-                </h2>
-                <small>{{desc}}</small>
+                  </h2>
+                  {{else}}
+                  <h3>{{title}}</h3>
+                {{/if}}
+
+                {{#if desc}}
+                  <small>{{desc}}</small>
+                {{/if}}
             </div>
         </div>
     </div>
