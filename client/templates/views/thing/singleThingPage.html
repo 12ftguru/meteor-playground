@@ -1,0 +1,80 @@
+<template name="singleThingPage">
+  {{#if subsReady}}
+    {{#with thing}}
+  {{> pageHeader title=name category="Thing"}}
+    {{#staggering}}
+    <div class="content">
+
+      <div class="row projects">
+            <div class="col-lg-6">
+                <div class="hpanel h{{getColor}}">
+                  <div class="panel-body">
+		        <div class="project-action m-t-md pull-right">
+                                    <div class="btn-group">
+                                      <a href="{{pathFor 'showThing' thing_id=_id}}" class="btn btn-xs btn-default" title="View"><i class="fa-3x pe-7s-science"></i></a>
+                                      <a href="{{pathFor 'editThing' thing_id=_id}}" class="btn btn-xs btn-default" title="Edit"><i class="fa-3x pe-7s-config"></i></a>
+                                        <a href="{{pathFor 'deleteThing' thing_id=_id}}" class="btn btn-xs btn-default" title="Delete"><i class="fa-3x pe-7s-less"></i></a>
+                                    </div>
+                                </div>
+                                
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h4><a href="{{pathFor 'showThing' thing_id=_id}}">{{name}}</a></h4>
+
+                                <p>
+                                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has..
+                                </p>
+
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="project-label">CREATED</div>
+                                        <small>{{formatDate create_date}}</small>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="project-label">VERSION</div>
+                                        <small>1.5.2</small>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="project-label">DEDLINE</div>
+                                        <small>12.06.2015</small>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="project-label">PROGRESS</div>
+                                        <div class="progress m-t-xs full progress-small">
+                                            <div style="width: 12%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="12" role="progressbar" class=" progress-bar progress-bar-{{getStatusColor}}">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 project-info">
+                                <div class="project-value">
+                                    <h2 class="text-{{getStatusColor}}">
+                                        $1 206,40
+                                    </h2>
+                                </div>
+                                <div class="project-people">
+                                    <img alt="logo" class="img-circle" src="images/a1.jpg">
+                                    <img alt="logo" class="img-circle" src="images/a2.jpg">
+                                    <img alt="logo" class="img-circle" src="images/a3.jpg">
+                                    <img alt="logo" class="img-circle" src="images/a4.jpg">
+                                    <img alt="logo" class="img-circle" src="images/a5.jpg">
+                                    <img alt="logo" class="img-circle" src="images/a6.jpg">
+                                    <img alt="logo" class="img-circle" src="images/a7.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        Additional information about project in footer
+                    </div>
+                </div>
+            </div>
+	</div>
+    </div>
+      {{/staggering}}
+    {{/with}}
+      {{else}}
+      {{> spinner}}
+      {{/if}}
+</template>

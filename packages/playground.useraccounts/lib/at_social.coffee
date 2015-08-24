@@ -1,0 +1,2 @@
+Template.atSocial.helpers AccountsTemplates.atSocialHelpers
+Template.atSocial.events AccountsTemplates.atSocialEvents

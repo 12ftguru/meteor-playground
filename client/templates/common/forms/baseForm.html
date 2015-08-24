@@ -1,0 +1,39 @@
+<template name="baseForm">
+  <div class="col-lg-6">
+    <div class="hpanel {{#if invalid}}warning2{{/if}}">
+      <div class="panel-heading">
+        <h4>{{title}}</h4>
+      </div>
+      {{#if failed}}
+        <div class="alert alert-error">
+          <i class="pe-7s-less fa-2x"></i> {{#if failedMessage}}{{failedMessage}}{{else}}Unable to submit the form.{{/if}}
+        </div>
+      {{else}}
+      {{#if invalid}}
+          <div class="alert alert-warning2">
+            <i class="pe-7s-gleam fa-2x"></i> There {{pluralize invalidCount 'is' 'are'}} {{invalidCount}} invalid field{{pluralize invalidCount '' 's'}}.
+          </div>
+      {{/if}}
+      {{/if}}
+      <div class="panel-body {{#if invalid}}invalid{{/if}}">
+        <form method="get" class="form-horizontal">
+        {{> UI.contentBlock data=data context=context}}
+      {{#if buttons}}
+        <div class="row">
+          {{#if cancelText}}
+        <div class="col-md-5 col-md-offset-1">
+          <button type="button" class="cancel btn btn-default btn-block">{{cancelText}}</button>
+        </div>
+          {{/if}}
+          {{#if submitText}}
+        <div class="col-md-5">
+          <button type="submit" class="save btn btn-primary btn-outline btn-block" >{{submitText}}</button>
+        </div>
+        {{/if}}
+      </div>
+      {{/if}}
+      </form>
+      </div>
+    </div>
+  </div>
+</template>

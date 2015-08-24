@@ -1,0 +1,11 @@
+<template name="htmlAreaField">
+  {{#panel title=labelText}}
+    <div class="htmlarea reactive-element" data-name="{{field}}">
+      {{#if value}}
+	{{{value}}}
+	{{else}}
+	{{#if placeholder}}{{{placeholder}}}{{else}}{{{instructions}}}{{/if}}
+      {{/if}}
+  </div>
+  {{/panel}}
+</template>

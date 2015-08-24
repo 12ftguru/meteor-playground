@@ -7,13 +7,15 @@ export JASMINE_CLIENT_INTEGRATION=1
 export VELOCITY_DEBUG_MIRROR=0
 export VELOCITY_SINGLE_RUN=0
 ARGS="--settings"
+METEOR_COMMAND="run"
 
-while getopts ":ha:sctm" optname
+while getopts ":ha:sctmd" optname
 do
     case "$optname" in
         "h")
             echo "Meteor Dev Start: $APP_NAME"
             echo -e "\t-a\tSet App Name (affects mongo db)."
+	    echo -e "\t-d\tStart with node-inspector enabled"
             echo -e "\t-s\tDisable Server Tests"
             echo -e "\t-c\tDisable Client Tests"
             echo -e "\t-m\tDebug Velocity Mirror"
@@ -44,6 +46,9 @@ do
             JASMINE_CLIENT_UNIT=0
             JASMINE_CLIENT_INTEGRATION=0
             ;;
+	"d")
+	    echo "Starting in debug mode."
+	    METEOR_COMMAND="debug"
     esac
 done
 
@@ -58,14 +63,17 @@ export MONGO_URL="mongodb://localhost:27017/$APP_NAME"
 if [[ -f "dev-settings.json" ]]
 then
     echo "Loading dev-settings.json"
-    meteor run $ARGS dev-settings.json
+    echo "meteor $METEOR_COMMAND $ARGS dev-settings.json"
+    meteor $METEOR_COMMAND $ARGS dev-settings.json
 else
     if [[ -f "settings.json" ]]
     then
         echo "Loading settings.json"
-        meteor run $ARGS settings.json
+	echo "meteor $METEOR_COMMAND $ARGS settings.json"
+        meteor $METEOR_COMMAND $ARGS settings.json
     else
         echo "No settings file found."
-        meteor run $ARGS
+	echo "meteor $METEOR_COMMAND $ARGS"
+        meteor $METEOR_COMMAND $ARGS
     fi
 fi

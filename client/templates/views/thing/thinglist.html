@@ -1,0 +1,12 @@
+<template name="navigation_thinglist">
+  {{#if subsReady}}
+    {{#if has_things thing_count}}
+      {{#each things}}
+        <li data-thingid="{{_id}}" class="{{isActiveRoute type="showThing" id=_id}}"><a href="{{pathFor 'showThing' _id=_id}}">{{name}}</a></li>
+      {{/each}}
+    {{/if}}
+
+    {{else}}
+    <li class="disabled"><a href="">Loading...</a></li>
+  {{/if}}
+</template>

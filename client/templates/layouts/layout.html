@@ -1,0 +1,12 @@
+<template name="layout">
+    <!-- Header -->
+    {{> header }}
+
+    <!-- Navigation -->
+    {{> Template.dynamic template=nav }}
+
+    <!-- Main Wrapper -->
+    <div id="wrapper">
+        {{> Template.dynamic template=main}}
+    </div>
+</template>

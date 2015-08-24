@@ -1,0 +1,58 @@
+<template name="atInput">
+    {{> Template.dynamic template=templateName}}
+</template>
+
+<template name="atTextInput">
+  <div class="at-input form-group {{#if isValidating}}validating{{/if}} {{#if hasError}}has-error{{/if}} {{#if hasSuccess}}has-success{{/if}} {{#if feedback}}has-feedback{{/if}}">
+    <label class="control-label {{#unless showLabels}}sr-only{{/unless}}" for="at-field-{{_id}}">
+      {{displayName}} {{#unless required}}{{optionalText}}{{/unless}}
+    </label>
+    {{#if hasIcon}}
+	<div class="input-group m-b">
+	  <span class="{{iconClass}} input-group-addon"></span>
+	  <input type="{{type}}" class="form-control" id="at-field-{{_id}}" name="at-field-{{_id}}" placeholder="{{placeholder}}" autocapitalize="none" autocorrect="off" />
+	</div>
+	{{else}}
+	<input type="{{type}}" class="form-control" id="at-field-{{_id}}" name="at-field-{{_id}}" placeholder="{{placeholder}}" autocapitalize="none" autocorrect="off" />
+      {{/if}}
+      
+    
+    <span class="help-block small {{#unless hasError}}hide{{/unless}}">{{errorText}}</span>
+  </div>
+</template>
+
+<template name="atCheckboxInput">
+  <div class="at-input checkbox">
+      <label for="at-field-{{_id}}"><input type="{{type}}" id="at-field-{{_id}}" name="at-field-{{_id}}" class="i-checks" {{disabled}}>
+      {{displayName}}</label>
+  </div>
+</template>
+
+<template name="atSelectInput">
+  <div class="at-input form-group">
+    <label for="at-field-{{_id}}" class="col-sm-2 control-label">{{displayName}}</label>
+    <div class="col-sm-10">
+    <select id="at-field-{{_id}}" name="at-field-{{_id}}" class="form-control m-b">
+      {{#each values}}
+        <option value="{{value}}">{{text}}</option>
+      {{/each}}
+    </select>
+    </div>
+  </div>
+</template>
+
+<template name="atRadioInput">
+  <div class="at-input">
+    <label>{{displayName}}</label>
+  </div>
+  {{#each values}}
+    <div class="at-input radio">
+      <label><input id="at-field-{{id}}-choice-{{value}}" type="radio" name="at-field-{{id}}" value="{{value}}" class="i-checks">
+      {{text}}</label>
+    </div>
+  {{/each}}
+</template>
+
+<template name="atHiddenInput">
+  <input type="hidden" id="at-field-{{_id}}" name="at-field-{{_id}}">
+</template>

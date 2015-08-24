@@ -1,0 +1,2 @@
+Template.atResendVerificationEmailLink.helpers AccountsTemplates.atResendVerificationEmailLinkHelpers
+Template.atResendVerificationEmailLink.events AccountsTemplates.atResendVerificationEmailLinkEvents

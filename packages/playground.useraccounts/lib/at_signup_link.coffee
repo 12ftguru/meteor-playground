@@ -1,0 +1,2 @@
+Template.atSignupLink.helpers AccountsTemplates.atSignupLinkHelpers
+Template.atSignupLink.events AccountsTemplates.atSignupLinkEvents

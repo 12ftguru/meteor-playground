@@ -1,0 +1,50 @@
+<template name="header">
+    <div id="header">
+        <div class="color-line">
+        </div>
+        <div id="logo" class="light-version">
+        <span class="brand-name">
+          <a href="{{pathFor 'home'}}">Playground</a>
+        </span>
+        </div>
+        <nav role="navigation">
+            <div class="header-link hide-menu"><i class="fa fa-bars"></i></div>
+            <div class="small-logo">
+              <a href="{{pathFor 'home'}}"><span class="text-primary">Playground</span></a>
+            </div>
+            <div class="navbar-right">
+              <ul class="nav navbar-nav no-borders">
+		{{#if isInRole 'admin'}}
+		<li class="dropdown">
+		  <a class="text-warning2" href="{{pathFor 'adminHome'}}">
+                    <i class="pe-7s-coffee"></i>
+                  </a>
+		</li>
+		{{/if}}
+                {{#if isActiveRoute regex='myThings'}}
+		  <li class="dropdown">
+		    <a class="text-info" href="{{pathFor 'addThing'}}" title='Add a new Thing'>
+		      <i class="pe-7s-plus"></i> Add a Thing
+		    </a>
+		  </li>
+		{{/if}}
+		<li class="dropdown">
+		  <a href="{{pathFor 'search'}}">
+                    <i class="pe-7s-search"></i>
+                  </a>
+		</li>
+		<li class="dropdown">
+		  <a href="{{pathFor 'settingsHome'}}">
+                    <i class="pe-7s-config"></i>
+                  </a>
+		</li>
+                    <li class="dropdown">
+                        <a href="{{pathFor 'signOut'}}">
+                            <i class="pe-7s-upload pe-rotate-90"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</template>

@@ -1,0 +1,2 @@
+Template.atTermsLink.helpers AccountsTemplates.atTermsLinkHelpers
+Template.atTermsLink.events AccountsTemplates.atTermsLinkEvents

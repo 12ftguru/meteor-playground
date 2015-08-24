@@ -1,0 +1,26 @@
+<template name="selectField">
+
+    <div class="form-group">
+
+    {{#unless noLabel}}
+      <label class="col-sm-2 control-label" for="{{field}}">{{label}}</label>
+    {{/unless}}
+
+    <div class="col-sm-{{#if noLabel}}12{{else}}10{{/if}}">
+      <select class="form-control m-b reactive-element" name="{{field}}">
+        <optgroup label="{{#if placeholder}}{{placeholder}}{{else}}{{instructions}}{{/if}}">
+        {{#each schema.allowedValues}}
+          <option selected="{{isChecked}}">{{option}}</option>
+        {{/each}}
+        </optgroup>
+      </select>
+      {{#if isOther}}
+        <input type="{{#if type}}{{type}}{{else}}text{{/if}}" class="form-control reactive-element" name="{{otherField}}" placeholder="{{#if otherPlaceholder}}{{otherPlaceholder}}{{else}}{{instructions}}{{/if}}" value="{{otherValue}}"/>
+      {{/if}}
+      {{#if errorMessage}}
+        <span class="error help-block m-b-none text-warning2 text-right">{{errorMessage}}</span>
+      {{/if}}
+
+    </div>
+    </div>
+</template>
